@@ -5,6 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astrofy-template.netlify.app',
-  integrations: [mdx(), sitemap(), tailwind()]
+  site: 'https://edukaique.github.io',
+  base: '/ds881-curriculo-GRR20240555',
+  integrations: [mdx(), tailwind()]
 });
