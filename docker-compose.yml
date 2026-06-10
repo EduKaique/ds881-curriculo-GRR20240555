@@ -3,15 +3,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    # Mapeia a porta 4321 do contêiner para a porta 8080 do host (conforme exigido)
     ports:
       - "8080:4321"
-    # Bind mount: sincroniza o código local com o contêiner em tempo real (hot reload)
     volumes:
       - .:/app
-      # Volume anônimo para isolar o node_modules do contêiner e não sobrescrever com o do host
       - /app/node_modules
-    # Comando de desenvolvimento do Astro com pnpm — host 0.0.0.0 necessário para aceitar conexões externas ao contêiner
     command: pnpm run dev -- --host 0.0.0.0 --port 4321
     environment:
       - NODE_ENV=development
