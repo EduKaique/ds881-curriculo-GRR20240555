@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://EduKaique.github.io",
-  // base: '/ds881-curriculo-GRR20240555',
+  base: '/ds881-curriculo-GRR20240555',
   vite: {
     server: {
       watch: {
