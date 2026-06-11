@@ -1,8 +1,10 @@
 # ds881-curriculo-GRRxxxxxxxx
 
+![Imagem Curriculo](/public/docs/curriculo.png)
+
 Currículo online desenvolvido com [Astrofy](https://github.com/manuelernestog/astrofy) como atividade prática da disciplina DS881.
 
-🔗 **[Ver currículo em produção](https://SEU_USUARIO.github.io/ds881-curriculo-GRRxxxxxxxx/)**
+🔗 **[Ver currículo em produção](https://edukaique.github.io/ds881-curriculo-GRR20240555/)**
 
 ---
 
@@ -11,6 +13,7 @@ Currículo online desenvolvido com [Astrofy](https://github.com/manuelernestog/a
 Site estático de currículo/portfólio pessoal, hospedado no GitHub Pages. O projeto aplica conceitos de conteinerização com Docker, automação de CI/CD com GitHub Actions e governança de código com Branch Protection e Pull Requests.
 
 **Stack:**
+
 - [Astro](https://astro.build/) com o template [Astrofy](https://github.com/manuelernestog/astrofy)
 - Docker + Docker Compose para ambiente de desenvolvimento local
 - GitHub Actions para pipeline de CI/CD
@@ -27,17 +30,20 @@ Site estático de currículo/portfólio pessoal, hospedado no GitHub Pages. O pr
 ### Passo a passo
 
 **1. Clone o repositório:**
+
 ```bash
-git clone https://github.com/SEU_USUARIO/ds881-curriculo-GRRxxxxxxxx.git
-cd ds881-curriculo-GRRxxxxxxxx
+git clone https://github.com/EduKaique/ds881-curriculo-GRR20240555.git
+cd ds881-curriculo-GRR20240555
 ```
 
 **2. Suba o ambiente de desenvolvimento:**
+
 ```bash
 docker compose up --build
 ```
 
 **3. Acesse no navegador:**
+
 ```
 http://localhost:8080
 ```
@@ -45,6 +51,7 @@ http://localhost:8080
 O servidor utiliza **hot reload** — qualquer alteração salva nos arquivos do projeto é refletida automaticamente no navegador, sem precisar reiniciar o contêiner.
 
 **4. Para encerrar:**
+
 ```bash
 docker compose down
 ```
@@ -57,16 +64,16 @@ docker compose down
 
 O workflow `.github/workflows/main.yml` é acionado automaticamente:
 
-| Evento | Jobs executados |
-| :--- | :--- |
-| Abertura de Pull Request para `main` | `lint` → `build` |
-| Merge / push na `main` | `lint` → `build` → `deploy` |
+| Evento                               | Jobs executados             |
+| :----------------------------------- | :-------------------------- |
+| Abertura de Pull Request para `main` | `lint` → `build`            |
+| Merge / push na `main`               | `lint` → `build` → `deploy` |
 
-| Job | Descrição |
-| :--- | :--- |
-| 🔍 **Lint** | Analisa o código com ESLint (`eslint-plugin-astro` + `typescript-eslint`) |
-| 🏗️ **Build** | Compila o site Astro e gera o artefato de deploy |
-| 🚀 **Deploy** | Publica o artefato no GitHub Pages via `actions/deploy-pages` |
+| Job           | Descrição                                                                 |
+| :------------ | :------------------------------------------------------------------------ |
+| 🔍 **Lint**   | Analisa o código com ESLint (`eslint-plugin-astro` + `typescript-eslint`) |
+| 🏗️ **Build**  | Compila o site Astro e gera o artefato de deploy                          |
+| 🚀 **Deploy** | Publica o artefato no GitHub Pages via `actions/deploy-pages`             |
 
 ---
 
@@ -80,7 +87,9 @@ A branch `main` está configurada com as seguintes regras no GitHub:
 
 > 📸 **Print da configuração de Branch Protection:**
 >
-> *(Adicione aqui o print das configurações em Settings → Branches → Branch protection rules)*
+> ![alt text](./public/docs/protected-1.png)
+> ![alt text](./public/docs/protected-2.png)
+> ![alt text](./public/docs/protected-3.png)
 
 ---
 
