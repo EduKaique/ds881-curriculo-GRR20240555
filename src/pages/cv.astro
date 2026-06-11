@@ -3,90 +3,94 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
+<BaseLayout title="Currículo" sideBarActiveItemID="cv">
+<div class="pb-12 mt-5">
+    <div class="text-xl py-1">Olá 👋</div>
+    <div class="text-5xl font-bold">Eu sou Eduardo Kaique</div>
+    <div class="text-3xl py-3 font-bold">Desenvolvedor Web</div>
+  </div>
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Perfil</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Desenvolvedor Web Fullstack e Designer de Produto com sólida base em arquitetura de software e design de interfaces. Especialista em transformar requisitos complexos em soluções visuais e técnicas de alto desempenho. Possuo experiência prática no ciclo completo de desenvolvimento de produtos, desde o wireframe no Figma até a implementação técnica utilizando tecnologias líderes de mercado como React, Angular, Spring Boot e Laravel. Sou apaixonado por construir pontes entre o design intuitivo e um backend robusto, criando experiências digitais acessíveis, escaláveis e memoráveis.
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
+    <div class="text-3xl w-full font-bold">Formação Acadêmica</div>
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)"
+      subtitle="De 2024 a Dezembro de 2026 (Previsão) na Universidade Federal do Paraná (UFPR), Curitiba, Brasil"
     />
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold">Experiência Profissional</div>
   </div>
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Web Designer & Desenvolvedor Frontend Jr."
+      subtitle="Na Sisteplan | E-governe, Curitiba, Brasil"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Atuação no ciclo completo de produto, desde a criação de wireframes no Figma até a implementação técnica. Desenvolvimento de interfaces UX/UI para sistemas públicos, focando na garantia de responsividade e fidelidade visual. Utilização de tecnologias como AngularJS, Python (Streamlit) e SCSS.
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Estagiário Web Designer"
+      subtitle="Na Groner CRM, Curitiba, Brasil"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Foco na criação de layouts responsivos e propostas comerciais alinhadas às necessidades dos clientes. Colaboração direta com equipes criativas para a otimização da experiência do usuário em plataformas de CRM, utilizando Figma, Illustrator e frameworks como Grape.js.
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Desenvolvedor Web"
+      subtitle="Na Ecomp UFPR (Empresa Júnior de Informática), Curitiba, Brasil"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Desenvolvimento de sites e sistemas web com foco em padrões de mercado e metodologias ágeis (Scrum e Kanban). Implementação de soluções utilizando Vue.js, PHP (Laravel) e integração com APIs REST/RESTful.
     </TimeLineElement>
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">Projetos em Destaque & Conquistas</div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <strong>Sabiá (TCC):</strong> Ecossistema de IA integrado para gestão pedagógica, desenvolvido com Next.js e .NET.
     </li>
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <strong>Bantads:</strong> Sistema bancário implementado com arquitetura de microsserviços em Java (Spring Boot) e frontend em Angular.
+    </li>
+    <li>
+      <strong>Ecommerce Aquarela:</strong> E-commerce de moda infantil desenvolvido em Next.js com API em Laravel, otimizado para alta performance.
+    </li>
+    <li>
+      <strong>Campeonato Lugobots:</strong> 1º Lugar na competição universitária, através do desenvolvimento de algoritmos e estratégias em Python.
     </li>
   </ul>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">Habilidades Técnicas</div>
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>JavaScript (ES6+)</li>
+    <li>TypeScript</li>
+    <li>React & Next.js</li>
+    <li>Angular</li>
+    <li>Vue.js</li>
+    <li>HTML5 & CSS3</li>
+    <li>Tailwind & SCSS</li>
+    <li>Java (Spring Boot)</li>
+    <li>PHP (Laravel)</li>
+    <li>Python</li>
+    <li>Node.js</li>
+    <li>Kotlin</li>
+    <li>Docker</li>
+    <li>Figma (UX/UI)</li>
+    <li>Git & GitFlow</li>
   </ul>
 </BaseLayout>
